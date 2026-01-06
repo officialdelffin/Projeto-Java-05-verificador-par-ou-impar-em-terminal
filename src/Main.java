@@ -15,7 +15,9 @@ public class Main {
     // Função que é responsável por executar o sistema:
     public static void main( String[] args ) {
 
+        SistemaVerificacao execucao = new SistemaVerificacao();
 
+        execucao.funcaoVerificarNumero();
 
     }
 }
@@ -34,16 +36,6 @@ class SistemaVerificacao {
 
     // Métodos :
 
-    // FUnção de execucao :
-    public void funcaoExibicao () {
-
-
-
-
-
-    }
-
-
     // Função onde o sistema vai roda :
     public void funcaoVerificarNumero () {
 
@@ -54,11 +46,11 @@ class SistemaVerificacao {
 
         // Texto de apresentação :
         System.out.println( "Olá, seja bem-vindo ao sistema de verificacao se é par ou impar!" );
-        System.out.println( "Para fazer uma verificação escreva INICIAR e para encerrar o sistema basta escrever ENCERRAR" );
+        numeroEncerrametno = "INICIAR";
 
 
         // Equanto
-        while ( numeroEncerrametno != "ENCERRAMENTO" && numeroEncerrametno == "INICIAR" ) {
+        while ( numeroEncerrametno == "INICIAR" ) {
 
 
             // Texto que pergunta se o usuário quer iniciar ou encerrar :
@@ -66,6 +58,8 @@ class SistemaVerificacao {
 
             // Recebendo resposta e armazenando :
             numeroEncerrametno = inputUsuario.nextLine();
+
+
 
 
         }
