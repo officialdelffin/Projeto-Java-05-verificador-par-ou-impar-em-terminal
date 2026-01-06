@@ -27,31 +27,48 @@ class SistemaVerificacao {
 
     // Atributos :
 
-    int numeroEscolhido = 0;
-    int restoDaDivisao  = 0;
-    String verificacaoEncerrametno = "";
+    int numeroEscolhido        = 0;
+    int restoDaDivisao         = 0;
+    String numeroEncerrametno  = "";
 
 
     // Métodos :
 
+    // FUnção de execucao :
     public void funcaoExibicao () {
 
 
-        // Criando o objeto de input para o usuário :
-        Scanner input = new Scanner( System.in );
-
-
-        // Texto de apresentação :
-        System.out.println( "Olá, seja bem-vindo ao sistema de verificacao se é par ou impar!" );
-        System.out.println( "Escreva 1 para iniciar e 2 para encerrar o sistema :." );
-        verificacaoEncerrametno = input.nextLine();
 
 
 
     }
 
+
+    // Função onde o sistema vai roda :
     public void funcaoVerificarNumero () {
 
+
+        // Criando o objeto de input para o usuário :
+        Scanner inputUsuario = new Scanner( System.in );
+
+
+        // Texto de apresentação :
+        System.out.println( "Olá, seja bem-vindo ao sistema de verificacao se é par ou impar!" );
+        System.out.println( "Para fazer uma verificação escreva INICIAR e para encerrar o sistema basta escrever ENCERRAR" );
+
+
+        // Equanto
+        while ( numeroEncerrametno != "ENCERRAMENTO" && numeroEncerrametno == "INICIAR" ) {
+
+
+            // Texto que pergunta se o usuário quer iniciar ou encerrar :
+            System.out.println( "Digite o que você quer fazer? INICIAR ou ENCERRAR" );
+
+            // Recebendo resposta e armazenando :
+            numeroEncerrametno = inputUsuario.nextLine();
+
+
+        }
 
 
     }
