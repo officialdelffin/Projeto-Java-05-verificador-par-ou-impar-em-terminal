@@ -46,23 +46,37 @@ class SistemaVerificacao {
 
         // Texto de apresentação :
         System.out.println( "Olá, seja bem-vindo ao sistema de verificacao se é par ou impar!" );
-        numeroEncerrametno = "INICIAR";
 
 
-        // Equanto
-        while ( numeroEncerrametno == "INICIAR" ) {
+        // Texto pedindo para o usuário digitar o número escolhido :
+        System.out.println( "Me informe o número que deseja verificar: " );
 
 
-            // Texto que pergunta se o usuário quer iniciar ou encerrar :
-            System.out.println( "Digite o que você quer fazer? INICIAR ou ENCERRAR" );
-
-            // Recebendo resposta e armazenando :
-            numeroEncerrametno = inputUsuario.nextLine();
+        // Recebendo número que o usuário escreveu :
+        numeroEscolhido = inputUsuario.nextInt();
 
 
+        // Calculando o resto da divisão do número escolhido :
+        restoDaDivisao = numeroEscolhido % 2;
+
+
+        // Se o resto da divisão for 0 notifica que o número é par :
+        if (restoDaDivisao == 0 ) {
+
+
+            System.out.println( "O número " + numeroEscolhido + " é um numero par!" );
 
 
         }
+
+        else  {
+
+
+            System.out.println( "O número " + numeroEscolhido + " é um numero impar!" );
+
+
+        }
+
 
 
     }
