@@ -60,18 +60,22 @@ class SistemaVerificacao {
         restoDaDivisao = numeroEscolhido % 2;
 
 
-        // Se o resto da divisão for 0 notifica que o número é par :
+        // Se o resto da divisão for igual a 0 :
         if (restoDaDivisao == 0 ) {
 
 
+            // Notifica que o número é impar
             System.out.println( "O número " + numeroEscolhido + " é um numero par!" );
 
 
         }
 
+
+        // Se for diferente de 0 :
         else  {
 
 
+            // Notifica que o número é impar
             System.out.println( "O número " + numeroEscolhido + " é um numero impar!" );
 
 
